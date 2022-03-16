@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A5D6A7"
+    tools:context=".ui.AsistenciasFrg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_add_fecha"
+            android:textSize="20sp"
+            android:textColor="@color/input_login"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.33"/>
+
+        <EditText
+            android:id="@+id/et_Fecha"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_light"
+            android:hint="31-12-20xx"
+            android:padding="8dp"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFecha"
+            app:layout_constraintVertical_bias="0.15"/>
+
+        <Button
+            android:id="@+id/btn_add_date"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_fecha"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_add"
+            android:background="@drawable/button_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintVertical_bias="0.5"/>
+
+        <Button
+            android:id="@+id/btn_update_date"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:text="@string/btn_update_fecha"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_update"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.95"/>
+
+        <Button
+            android:id="@+id/btn_delete_date"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_delete_fecha"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"
+            android:drawableLeft="@drawable/ic_remove"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintHorizontal_bias="0.95"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/list_fechas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_list"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

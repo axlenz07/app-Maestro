@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.uaeh.aame.cobmaestros.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@id/nav_list_alum"
+        android:name="com.uaeh.aame.cobmaestros.ui.ListaAlumnosFrg"
+        android:label="@string/menu_alumnos"
+        tools:layout="@layout/fragment_lista_alumnos">
+        <action
+            android:id="@+id/action_nav_list_alum_to_nav_detalle_padre"
+            app:destination="@id/nav_detalle_padre" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_activities"
+        android:name="com.uaeh.aame.cobmaestros.ui.ActividadesFrg"
+        android:label="@string/menu_activities"
+        tools:layout="@layout/fragment_actividades">
+        <action
+            android:id="@+id/action_nav_activities_to_nav_calificacion"
+            app:destination="@id/nav_calificacion" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_calificacion"
+        android:name="com.uaeh.aame.cobmaestros.ui.CargarCalificacionesFrg"
+        android:label="@string/frg_cargar_calif"
+        tools:layout="@layout/fragment_cargar_calificaciones"/>
+
+    <fragment
+        android:id="@+id/nav_asistencia"
+        android:name="com.uaeh.aame.cobmaestros.ui.AsistenciasFrg"
+        android:label="@string/menu_asistencias"
+        tools:layout="@layout/fragment_asistencias">
+        <action
+            android:id="@+id/action_nav_asistencia_to_nav_alumn_asistencia"
+            app:destination="@id/nav_alumn_asistencia" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alumn_asistencia"
+        android:name="com.uaeh.aame.cobmaestros.ui.AlumnoAsistenciasFrg"
+        android:label="@string/frg_asis_alumno"
+        tools:layout="@layout/fragment_asis_todos_alumno"/>
+
+    <fragment
+        android:id="@+id/nav_scale"
+        android:name="com.uaeh.aame.cobmaestros.ui.EscalaFrg"
+        android:label="@string/menu_escala"
+        tools:layout="@layout/fragment_escala"/>
+
+    <fragment
+        android:id="@+id/nav_avisos"
+        android:name="com.uaeh.aame.cobmaestros.ui.AvisosFrg"
+        android:label="@string/menu_avisos"
+        tools:layout="@layout/fragment_escala"/>
+
+    <fragment
+        android:id="@+id/nav_detalle_padre"
+        android:name="com.uaeh.aame.cobmaestros.ui.DetallesPadreFrg"
+        android:label="@string/frg_detalles_padre"
+        tools:layout="@layout/fragment_detalles_padre"/>
+
+    <fragment
+        android:id="@+id/nav_data_user"
+        android:name="com.uaeh.aame.cobmaestros.ui.DataUserFragment"
+        android:label="@string/menu_user_data"
+        tools:layout="@layout/fragment_data_user">
+        <action
+            android:id="@+id/action_nav_data_user_to_nav_update_user"
+            app:destination="@id/nav_update_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.uaeh.aame.cobmaestros.ui.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about"/>
+
+    <fragment
+        android:id="@+id/nav_update_user"
+        android:name="com.uaeh.aame.cobmaestros.ui.UpdateUserFrg"
+        android:label="@string/fg_update_user"
+        tools:layout="@layout/fragment_update_data"/>
+
+</navigation>

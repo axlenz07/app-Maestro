@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#A5D6A7"
+    android:orientation="vertical"
+    tools:context=".ui.AvisosFrg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerr"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/lista_avisos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/asunto"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_light"
+            android:padding="8dp"
+            android:hint="@string/hint_add_titulo"
+            android:textColorHint="@color/input_login_hint"
+            android:textColor="@color/input_login"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/text_light"
+            android:gravity="top"
+            android:padding="8dp"
+            android:hint="@string/hint_descripcion"
+            android:textColorHint="@color/input_login_hint"
+            android:textColor="@color/input_login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asunto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/anadir_aviso"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:drawableLeft="@drawable/ic_add"
+            android:text="@string/btn_nv_aviso"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.931" />
+
+        <Button
+            android:id="@+id/editar_aviso"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:drawableLeft="@drawable/ic_edit"
+            android:text="@string/btn_ed_aviso"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descripcion"
+            app:layout_constraintVertical_bias="0.746" />
+
+        <Button
+            android:id="@+id/remover_aviso"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:drawableLeft="@drawable/ic_remove"
+            android:text="@string/btn_rv_notice"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.837"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descripcion"
+            app:layout_constraintVertical_bias="0.746" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/lista_avisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_list"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

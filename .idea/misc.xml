@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/app_bar.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/bg_login.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/bg_register.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/button_rounded.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.12604166666666666" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/ic_negative.xml" value="0.23923611111111112" />
+        <entry key="app/src/main/res/drawable/ic_positive.xml" value="0.23923611111111112" />
+        <entry key="app/src/main/res/drawable/ic_remove.xml" value="0.12604166666666666" />
+        <entry key="app/src/main/res/drawable/ic_update.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/layout_programador.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/round_list.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.20572916666666666" />
+        <entry key="app/src/main/res/drawable/text_light.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2418478260869565" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.3079710144927536" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.27853260869565216" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_actividades.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_asis_todos_alumno.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_asistencias.xml" value="0.14093959731543623" />
+        <entry key="app/src/main/res/layout/fragment_avisos.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_cargar_calificaciones.xml" value="0.20935792349726776" />
+        <entry key="app/src/main/res/layout/fragment_data_user.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/fragment_detalles_padre.xml" value="0.2826086956521739" />
+        <entry key="app/src/main/res/layout/fragment_escala.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.27853260869565216" />
+        <entry key="app/src/main/res/layout/fragment_lista_alumnos.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_update_data.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/list_alumnos.xml" value="0.2826086956521739" />
+        <entry key="app/src/main/res/layout/list_asistencias.xml" value="0.31476449275362317" />
+        <entry key="app/src/main/res/layout/list_avisos.xml" value="0.317481884057971" />
+        <entry key="app/src/main/res/layout/list_calificacion.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_escala.xml" value="0.3220108695652174" />
+        <entry key="app/src/main/res/layout/list_fecha.xml" value="0.30344202898550726" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/nuevo_aviso_frg.xml" value="0.34375" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.34375" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.34375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.20935792349726776" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
